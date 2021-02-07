@@ -12,8 +12,6 @@ public class SerialNum3Test {
 		studentSon.setStudentName("¼ÕÈï¹Î");
 		System.out.println(studentSon.studentName + " ÇĞ¹ø : " + studentSon.studentID
 				+ ", Ä«µå ¹øÈ£ : " + studentSon.cardNumber);
-		
-
 	}
 
 }
