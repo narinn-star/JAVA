@@ -8,17 +8,19 @@ public class Customer {
 	double bonusRatio;
 	
 	public Customer() {
-		customerGrade = "SILVER";
-		bonusRatio = 0.01;
-		System.out.println("Customer() 생성자 호출");
+		initCustomer();
 	}
 	
 	public Customer(int customerID, String customerName) {
 		this.customerID = customerID;
 		this.customerName = customerName;
+		System.out.println("Customer(int, String) 생성자 호출");
+		initCustomer();
+	}
+	
+	private void initCustomer() {
 		customerGrade = "SILVER";
 		bonusRatio = 0.01;
-		System.out.println("Customer(int, String) 생성자 호출");
 	}
 	
 	public int calcPrice(int price) {
