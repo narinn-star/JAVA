@@ -14,5 +14,4 @@ public class CalculatorTest {
 		System.out.println(calc.square(num1));
 		calc.showInfo();
 	}
-
 }
