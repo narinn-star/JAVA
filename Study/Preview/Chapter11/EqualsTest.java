@@ -12,6 +12,23 @@ class Student1{
 	public String toString() {
 		return studentId + ", " + studentName;
 	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (obj instanceof Student1) {
+			Student1 std = (Student1)obj;
+			if(this.studentId == std.studentId)
+				return true;
+			else 
+				return false;
+		}
+		return false;
+	}
+	
+	@Override
+	public int hashCode() {
+		return studentId;
+	}
 }
 
 public class EqualsTest {
@@ -39,6 +56,12 @@ public class EqualsTest {
 			System.out.println("Lee客 Sang 老摹");
 		else
 			System.out.println("Lee客 Sang 阂老摹");
+		
+		System.out.println("studentLee狼 hashCode : " + studentLee.hashCode());
+		System.out.println("studentSang狼 hashCode : " + studentSang.hashCode());
+		
+		System.out.println("studentLee狼 角力 林家 蔼 : " + System.identityHashCode(studentLee));
+		System.out.println("studentSang狼 角力 林家 蔼 : " + System.identityHashCode(studentSang));	
 	}
 
 }
