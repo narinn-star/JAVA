@@ -9,19 +9,18 @@ public class Rectangle {
 		this.width = width;
 		this.height = height;
 	}
-	
+
 	int square() {
 		return width * height;
 	}
-	
+
 	void show() {
 		System.out.println("(" + x + "," + y + ")에서 크기가 " + width + "x" + height + "인 사각형");
 	}
-	
+
 	boolean contains(Rectangle r) {
-		if((x<r.x) && (y<r.y) && (x+width > r.x + r.width) &&(y+height > r.y + r.height)) {
+		if ((x < r.x) && (y < r.y) && (x + width > r.x + r.width) && (y + height > r.y + r.height))
 			return true;
-		}
 		else
 			return false;
 	}
@@ -38,5 +37,4 @@ public class Rectangle {
 		if (t.contains(s))
 			System.out.println("t는 s를 포함합니다.");
 	}
-
 }
