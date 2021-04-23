@@ -67,36 +67,39 @@ class Seat {
 
 	public boolean delete(int selectSeat, String name) {
 		if (selectSeat == 1) {
+			int tmp =0;
 			for (int i = 0; i < 10; i++) {
 				if (S[i].equals(name)) {
 					S[i] = "---";
+					tmp++;
 					System.out.println("취소 완료");
-					return true;
 				}
-				return false;
 			}
+			return tmp==0?false:true;
 		} else if (selectSeat == 2) {
+			int tmp =0;
 			for (int i = 0; i < 10; i++) {
 				if (A[i].equals(name)) {
 					A[i] = "---";
+					tmp++;
 					System.out.println("취소 완료");
-					return true;
 				}
-				return false;
 			}
+			return tmp==0?false:true;
 		} else if (selectSeat == 3) {
+			int tmp =0;
 			for (int i = 0; i < 10; i++) {
 				if (B[i].equals(name)) {
 					B[i] = "---";
+					tmp++;
 					System.out.println("취소 완료");
-					return true;
 				}
-				return false;
 			}
+			return tmp==0?false:true;
 		} else {
 			System.out.println("처음부터 다시 입력");
+			return false;
 		}
-		return false;
 	}
 }
 
