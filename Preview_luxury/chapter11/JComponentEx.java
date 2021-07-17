@@ -10,23 +10,24 @@ public class JComponentEx extends JFrame {
 		Container c = getContentPane();
 		c.setLayout(new FlowLayout());
 		
-		JButton b1 = new JButton("Magenta/Yellow Button");
-		JButton b2 = new JButton("		Disabled Button		");
+		JButton b1 = new JButton("Magenta/Yellow Button"); 
+		JButton b2 = new JButton("		Disabled Button		"); 
 		JButton b3 = new JButton("getX(), getY()");
 		
-		b1.setBackground(Color.yellow);
-		b1.setForeground(Color.magenta);
-		b1.setFont(new Font("Arial", Font.ITALIC, 20));
+		b1.setBackground(Color.yellow); //배경색 설정
+		b1.setForeground(Color.magenta); //글자색 설정
+		b1.setFont(new Font("Arial", Font.ITALIC, 20)); //Arial, 20픽셀 폰트 설정
 		b2.setEnabled(false);
 		b3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JButton b = (JButton)e.getSource();
 				JComponentEx frame = (JComponentEx)b.getTopLevelAncestor();
-				frame.setTitle(b.getX() + ", " + b.getY());
+				frame.setTitle(b.getX() + ", " + b.getY()); //타이틀에 버튼 좌표 출력
+				//HCinoibebtEx.this.setTitle(...);로 해도 됨
 			}
 		});		
 		
-		c.add(b1); c.add(b2); c.add(b3);
+		c.add(b1); c.add(b2); c.add(b3); //컨텐트팬에 버튼 부착
 		
 		setSize(260, 200);
 		setVisible(true);
