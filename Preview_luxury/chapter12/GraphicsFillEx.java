@@ -32,7 +32,6 @@ public class GraphicsFillEx extends JFrame {
 			g.fillPolygon(x, y, 4);
 		}
 	}
-
 	public static void main(String[] args) {
 		new GraphicsFillEx();
 	}
