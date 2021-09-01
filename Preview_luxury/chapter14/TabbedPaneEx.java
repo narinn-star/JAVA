@@ -34,12 +34,12 @@ public class TabbedPaneEx extends JFrame {
 		
 		public void paintComponent(Graphics g) {
 			super.paintComponent(g);
-			g.setColor(Color.red);
+			g.setColor(Color.RED);
 			g.fillRect(10, 10, 50, 50);
-			g.setColor(Color.blue);
+			g.setColor(Color.BLUE);
 			g.fillOval(10,  70, 50, 50);
-			g.setColor(Color.black);
-			g.drawString("tab 3에 들어가는 JPanel 입니다.", 30, 50);
+			g.setColor(Color.BLACK);
+			g.drawString("tab 3에 들어가는 JPanel 입니다", 30, 50);
 		}
 	}
 
