@@ -2,7 +2,6 @@ package Chapter11;
 
 import java.awt.*;
 import javax.swing.*;
-import java.awt.event.*;
 
 public class SliderEx extends JFrame {
 	public SliderEx() {
