@@ -19,8 +19,8 @@ public class ToolTipDelayEx extends JFrame {
 		c.add(apple);
 		
 		ToolTipManager m = ToolTipManager.sharedInstance();
-		m.setInitialDelay(0);
-		m.setDismissDelay(10000);
+		m.setInitialDelay(0);			//초기 툴팁 지연 시간 0초
+		m.setDismissDelay(10000);		//툴팁 지속 시간 10초
 		
 		setSize(450, 250);
 		setVisible(true);
