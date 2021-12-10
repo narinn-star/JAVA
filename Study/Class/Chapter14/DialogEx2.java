@@ -49,6 +49,7 @@ class MyModalDialog extends JDialog {
 		okButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				setVisible(true);
+				
 			}
 		});
 	}
