@@ -43,7 +43,7 @@ public class imageLoad extends JFrame {
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			JFileChooser chooser = new JFileChooser();
-			FileNameExtensionFilter filter = new FileNameExtensionFilter("JPG & GIF Images", "jpg", "gif"); 
+			FileNameExtensionFilter filter = new FileNameExtensionFilter("JPG & GIF Images", "jpg", "gif"); //나타낼, 가져올 확장자명
 			chooser.setFileFilter(filter); 
 			
 			int ret = chooser.showOpenDialog(null);
