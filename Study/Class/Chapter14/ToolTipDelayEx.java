@@ -30,3 +30,4 @@ public class ToolTipDelayEx extends JFrame {
 		new ToolTipDelayEx();
 	}
 }
+
