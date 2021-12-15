@@ -15,7 +15,7 @@ public class FileWriterEx {
 				if(line.length() == 0)
 					break;
 				fout.write(line, 0, line.length()); 	//문자열을 파일에 저장
-				fout.write("\r\n", 0, 2);
+				fout.write("\r\n", 0, 2);				//행 바꾸기 추가
 			}
 			fout.close();
 		}
